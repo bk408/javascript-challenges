@@ -16,27 +16,25 @@ Note:-
 */
 
 function findLongestWord(str) {
-  if (str.trim() === 0) {
-    return false;
+
+
+  if (str.trim().length === 0) {
+    return false
   }
 
-  const words = str.split(" ");
+  words = str.split(" ");
+ 
+
+  words = words.sort((a, b) => b.length - a.length);
   console.log(words);
+  
+  return words[0]
 
-  /* return words.reduce((accumulator, currentValue) => {
-     return currentValue.length > accumulator.length ? currentValue : accumulator
-    }, "");  */
-
-  return words.reduce(
-    (accumulator, currentValue) =>
-      currentValue.length > accumulator.length ? currentValue : accumulator,
-    ""
-  );
 }
 
 console.log(
   findLongestWord(
-    "Lorem ipsum dolor sit amet consecteturahr consecteturash elit. Aut aperiam earum culpa."
+    "Hello my name is Bhavya Khatri and I'm a frontend developer, currently I am practice JavascriptChallengeDay1."
   )
 );
 
