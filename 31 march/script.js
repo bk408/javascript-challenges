@@ -1,4 +1,4 @@
-/* Q. Write a function Find longest word that takes a string as input and returns the longest word in the string. 
+/* Q. Write a function Find the longest word that takes a string as input and returns the longest word in the string. 
 If there are multiple longest words, return the first one encountered 
 
 
@@ -8,7 +8,7 @@ Constraints:-
 3. The input string may contain multiple words separated by spaces.
 
 Note:- 
-1. If the inout string is empty or contains only whitespace, the function should return false.
+1. The function should return false if the input string is empty or contains only whitespace.
 2. The function should ignore leading and trailing whitespace when determining the longest word.
 
 
